@@ -6,111 +6,84 @@
     <title>Document</title>
   </head>
   <body>
-    <h1>Study Planner</h1>
-    <div class="top">
-      <section class="studyTimer">
-        <iframe
-          id="timer"
-          src="https://studywithme.io/aesthetic-pomodoro-timer/"
-          style="border: 0"
-          width="300"
-          height="350"
-          frameborder="0"
-          scrolling="no"
-        ></iframe>
-      </section>
-      <iframe
-        data-testid="embed-iframe"
-        style="border-radius: 12px"
-        src="https://open.spotify.com/embed/playlist/3tVn8zUOCMV5hfT8NRyHoJ?utm_source=generator&si=cb3bbf0872c842bc"
-        width="300"
-        height="352"
-        frameborder="0"
-        allowfullscreen=""
-        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-        loading="lazy"
-      ></iframe>
-      <iframe
-        data-testid="embed-iframe"
-        style="border-radius: 12px"
-        src="https://open.spotify.com/embed/playlist/07lYUEyTkWP3NqIa7Kzyqx?utm_source=generator&si=3a95c72da4cf400f"
-        width="300"
-        height="352"
-        frameborder="0"
-        allowfullscreen=""
-        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-        loading="lazy"
-      ></iframe>
-      <iframe
-        data-testid="embed-iframe"
-        style="border-radius: 12px"
-        src="https://open.spotify.com/embed/album/1PiqaSNptT2HN7Znz16fiK?utm_source=generator&si=6173fcf40ae741f2"
-        width="300"
-        height="352"
-        frameborder="0"
-        allowfullscreen=""
-        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-        loading="lazy"
-      ></iframe>
-    </div>
-    <div class="second">
-      <h2>Notes:</h2>
-      <textarea
-        id="notes"
-        rows="9"
-        placeholder="write your notes here....."
-      ></textarea>
-    </div>
-    <div class="second">
-      <h2>Goals:</h2>
-      <textarea
-        id="goals"
-        rows="9"
-        placeholder="write your goals here....."
-      ></textarea>
-    </div>
-    <div class="second">
-      <h2>Mindfulness</h2>
-      <textarea
-        id="mindfulness"
-        rows="9"
-        placeholder="How do I want to practice mindfulness today....."
-      ></textarea>
-    </div>
-    <div class="second">
-      <h2>Movement</h2>
-      <textarea
-        id="movement"
-        rows="9"
-        placeholder="How do I want to move my body today....."
-      ></textarea>
-    </div>
-    <section class="fullWeek">
-      <h3>Weekly Planner</h3>
-      <section class="planner">
-        <div class="days">
-          <button type="button">Sunday:</button>
-          <button type="button">Monday:</button>
-          <button type="button">Tuesday:</button>
-          <button type="button">Wednesday:</button>
-          <button type="button">Thursday:</button>
-          <button type="button">Friday:</button>
-          <button type="button">Saturday:</button>
-        </div>
-        <div class="week">
-          <textarea id="sunday" rows="20" placeholder="Sunday"></textarea>
-          <textarea id="monday" rows="20" placeholder="Monday"></textarea>
-          <textarea id="tuesday" rows="20" placeholder="Tuesday"></textarea>
-          <textarea id="wednesday" rows="20" placeholder="Wednesday"></textarea>
-          <textarea id="thursday" rows="20" placeholder="Thursday"></textarea>
-          <textarea id="friday" rows="20" placeholder="Friday"></textarea>
-          <textarea id="saturday" rows="20" placeholder="Saturday"></textarea>
-        </div>
-        <button id="savePlanner">Save Planner</button>
-        <button type="reset">Reset Planner</button>
-      </section>
-    </section>
+    <link rel="stylesheet" href="styles.css" />
+    <nav>
+      <a href="index.html" class="logo">StressFree Student</a>
 
-    <script src="script.js"></script>
+      <ul class="nav-links">
+        <li><a href="Mood-Journal.html">Mood Journal</a></li>
+        <li><a href="Calming-activities.html">Calming Activities</a></li>
+        <li><a href="study.strategies.html">Study Strategies</a></li>
+        <li><a href="study.planner.html">Study Planner</a></li>
+      </ul>
+    </nav>
+    <h1>Study Strategies</h1>
+
+    <h2>Active Recall</h2>
+    <div class="studyStrat">
+      <p>
+        Active recall means forcing your brain to retrieve information from
+        memory rather than passively rereading notes.To practice active recall,
+        read a short section of your study material, close the book or hide your
+        screen, and try to write down or speak the key concepts in your own
+        words. Once you finish your attempt, open your source material to check
+        for any mistakes or missing pieces, which highlights the exact areas
+        that need more of your focus.
+      </p>
+    </div>
+    <h2>Spaced Repetition</h2>
+    <div class="studyStrat">
+      <p>
+        Spaced repetition is a study method where you review new information at
+        gradually increasing time gaps rather than cramming.To do this
+        effectively, learn a topic, test your memory after 1 day, then 3 days,
+        then a week, and then longer intervals, making the gaps wider each time
+        you successfully remember the material.
+      </p>
+    </div>
+    <h2>Feynman Technique</h2>
+    <div class="studyStrat">
+      <p>
+        The Feynman Technique is a four-step learning method that involves
+        choosing a topic, teaching it simply, finding knowledge gaps, and
+        refining your explanation
+      </p>
+    </div>
+    <h2>Pomodoro Technique</h2>
+    <div class="studyStrat">
+      <p>
+        The Pomodoro Technique is a simple time management method that uses a
+        timer to split work into focused intervals separated by short breaks.
+        The core steps involve choosing a task, setting a 25-minute timer, and
+        taking a 5-minute break.
+      </p>
+    </div>
+    <h2>Interleaving</h2>
+    <div class="studyStrat">
+      <p>
+        Interleaving is a study method where you mix related topics or skills
+        during a single session rather than focusing on just one at a time. To
+        do it effectively, choose 2 to 3 related subjects, mix different problem
+        types, and alternate between them every 20 to 50 minutes.
+      </p>
+    </div>
+    <h2>Blurting</h2>
+    <div class="studyStrat">
+      <p>
+        Blurting is an active revision technique where you write down everything
+        you remember about a topic from memory, compare it to your notes, and
+        correct your mistakes. The core steps involve choosing a specific topic,
+        setting a timer, and writing freely on paper.
+      </p>
+    </div>
+    <h2>Targeted Review</h2>
+    <div class="studyStrat">
+      <p>
+        A targeted review (such as a targeted literature review) means focusing
+        on a specific goal, clear rules, and narrow search terms to save time.
+        The main steps are: define your precise question, set strict inclusion
+        limits, and search focused databases.
+      </p>
+    </div>
   </body>
 </html>
